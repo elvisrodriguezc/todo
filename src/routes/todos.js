@@ -99,7 +99,6 @@ router.patch("/todos/:id", (req, res) => {
             database.data[index].name = data.name;
         }
         if (data.age) {
-            https://mega.nz/file/zEkEmS4b#ZgBgn1XOjUXQLPaBVQugKtC9I_JkChHLk1mORq0esa0
             database.data[index].age = data.age;
         }
         fs.writeFileSync(databasePath, JSON.stringify(database));
